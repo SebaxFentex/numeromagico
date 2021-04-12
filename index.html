@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script type = "text/javascript" src="js/bootstrap.min.js"></script>
+        <script type = "text/javascript" src="jquery-3.6.0.js"></script>
+        <script type = "text/javascript" src="numeromagico.js"></script>
+
+        <title>Document</title>
+    </head>
+    <body style="height: 100vh; background-image: url('img/background.jpg'); background-size: cover;">
+
+        <header class="w-100 align-items-center" style="height: 10%; background-color:navy;">
+            <h1 style="color: white; text-align: center; padding-top: 20px;">Número Mágico</h1>
+        </header>
+        
+        <div class="d-flex justify-content-center align-items-center" style="height: 90%;">
+            <div class="container" style="border-radius: 25px; height: 80%; width: 70%; background-color: whitesmoke;">
+                <div class="row">
+                    <div class="col" style="padding: 20px;">
+                        <div style=" background-image: url('/img/notepad.png'); transform: scaleY(0.9); margin-top: -75px;">
+                            <h2 style="color: black; text-align: center; padding-top: 120px; font-size: 50px;"> <b>REGLAS</b></h2>
+                            <p style="padding-left: 100px; padding-right: 100px; padding-top: 20px; font-size: 36px;">
+                                La página genera un número aleatorio entre el 1 y el 1000 y tú debes adivinar cual es,
+                                tienes 10 intentos y después de cada uno tendrás una pista, tu objetivo es adivinar
+                                el numero antes de que se agoten los 10 intentos.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="row">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="campoingreso" style="text-align: center; margin-left: 5%; margin-top: 50px; margin-bottom: 10px; font-size: 50px;">Ingrese un numero entre 1 y 1000</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" id="campoingreso" class="campoingreso" style="margin-left: 14%; margin-top: 30px; margin-bottom: 20px; font-size: 40px; text-align: center;">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="submit" onclick="revisar()" value="Enviar" style="margin-left: 46.5%; margin-bottom: 30px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h3 id="texto" style="font-size: 40px; text-align: center; margin-top: 70px;"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+</html>
