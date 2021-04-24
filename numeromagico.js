@@ -76,7 +76,7 @@ let numeroAleatorio = Math.floor(Math.random() * 1000) + 1;
             document.getElementById("texto").innerHTML = "GANASTE";
             var nombre = prompt("Ingresa tu nombre para guardar tu puntaje", "Invitado");
             guardarPuntaje(nombre, i, new Date);
-            alert("PODIO:\n1: " + localStorage.getItem("nombretop1") + ", " + localStorage.getItem("puntajetop1") + " puntos, el " + localStorage.getItem("horatop1") + "\n2: " + localStorage.getItem("nombretop2") + ", " + localStorage.getItem("puntajetop2") + " puntos, el " + localStorage.getItem("horatop2") + "\n3: " + localStorage.getItem("nombretop3") + ", " + localStorage.getItem("puntajetop3") + " puntos, el " + localStorage.getItem("horatop3"));
+            alert("PODIO:\n1: " + localStorage.getItem("nombretop1") + ", " + localStorage.getItem("puntajetop1") + " intentos, el " + localStorage.getItem("horatop1") + "\n2: " + localStorage.getItem("nombretop2") + ", " + localStorage.getItem("puntajetop2") + " intentos, el " + localStorage.getItem("horatop2") + "\n3: " + localStorage.getItem("nombretop3") + ", " + localStorage.getItem("puntajetop3") + " intentos, el " + localStorage.getItem("horatop3"));
         }else if (i === 10) {
             
             document.getElementById("texto").innerHTML = "PERDISTE, el numero era " + numeroAleatorio;
